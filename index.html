@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock-paper-scissors</title>
+</head>
+<body>
+    <div class="background-alert">
+        <div class="alert">
+            <p class="alert-message">And the winner is... <span id="winner"></span>!!!</p>
+            <button class="play-again">Play again</button>
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="container">
+                <ul id="humanside">
+                    <li><img src="img/rock.png" alt="rock" id="rockHuman"></li>
+                    <li><img src="img/paper.png" alt="paper" id="paperHuman"></li>
+                    <li><img src="img/scissors.png" alt="scissors" id="scissorsHuman"></li>
+                </ul>
+        </div>
+
+        <div class="container">
+            <section id="lhs">
+                <h2>Player</h2>
+                <div class="player-choice">
+                    <img src="img/qm.png" alt="question-mark" id="imgChangePlayer">
+                </div>
+                <h1 class="resultHuman">?????</h1>
+                <h3>Points</h3>
+                <div class="sum-player">
+                    <div class="points-container">
+                        <span id="player-points">0</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <div class="round"><h1>ROUND <span id="round-number">1</span></h1></div>
+            <section id="middle">
+                <p>vs</p>
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="rhs">
+                <h2>Computer</h2>
+                <div class="computer-choice">
+                    <img src="img/qm.png" alt="question-mark" id="imgChangeComputer">
+                </div>
+                <h1 class="resultComputer">?????</h1>
+                <h3>Points</h3>
+                <div class="sum-cpu">
+                    <div class="points-container">
+                        <span id="computer-points">0</span>
+                    </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="computerside">
+                <ul>
+                    <li><img src="img/rock.png" alt="rock" id="rockComputer"></li>
+                    <li><img src="img/paper.png" alt="paper" id="paperComputer"></li>
+                    <li><img src="img/scissors.png" alt="scissors" id="scissorsComputer"></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
