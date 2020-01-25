@@ -72,13 +72,15 @@ function changeUI(){
     scoreComputer.innerHTML = scoreCPU;
     scoreHuman.innerHTML = scorePlayer;
     if(i === 5 && scorePlayer > scoreCPU){
-        whoIsTheWinner.innerText = name;
+        document.querySelector('.alert-message').innerText = `...and the winner is... ${name}!!!`
+        // whoIsTheWinner.innerText = name;
         setTimeout(function(){alertMessage.style.display = 'flex';}, 0);
     }else if (i === 5 && scorePlayer < scoreCPU){
-        whoIsTheWinner.innerText = 'COMPUTER';
+        document.querySelector('.alert-message').innerText = `...and the winner is... COMPUTER!!!`
+        // whoIsTheWinner.innerText = 'COMPUTER';
         setTimeout(function(){alertMessage.style.display = 'flex';}, 0);
     }else if (i === 5 && scorePlayer === scoreCPU){
-        document.querySelector('.alert-message').innerText = 'REMIS!!!'
+        document.querySelector('.alert-message').innerText = 'DRAW!!!'
         setTimeout(function(){alertMessage.style.display = 'flex';}, 0);
     }
 }
